@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "auth-app",
-    "slug": "auth-app",
+    "name": "authApp",
+    "slug": "authApp",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
     ]
   },
-  "name": "auth-app"
+  "name": "authApp"
 }

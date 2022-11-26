@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "authapp.app"
-               BlueprintName = "authapp"
-               ReferencedContainer = "container:authapp.xcodeproj">
+               BuildableName = "authApp.app"
+               BlueprintName = "authApp"
+               ReferencedContainer = "container:authApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "authappTests.xctest"
-               BlueprintName = "authappTests"
-               ReferencedContainer = "container:authapp.xcodeproj">
+               BuildableName = "authAppTests.xctest"
+               BlueprintName = "authAppTests"
+               ReferencedContainer = "container:authApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "authapp.app"
-            BlueprintName = "authapp"
-            ReferencedContainer = "container:authapp.xcodeproj">
+            BuildableName = "authApp.app"
+            BlueprintName = "authApp"
+            ReferencedContainer = "container:authApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "authapp.app"
-            BlueprintName = "authapp"
-            ReferencedContainer = "container:authapp.xcodeproj">
+            BuildableName = "authApp.app"
+            BlueprintName = "authApp"
+            ReferencedContainer = "container:authApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
