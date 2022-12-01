@@ -1,23 +1,35 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import firestore from "@react-native-firebase/firestore";
+import { NavigationContainer } from "@react-navigation/native";
 
-export default function App() {
-  const usersCollection = firestore().collection("Users");
-  console.log(usersCollection);
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+import firestore from "@react-native-firebase/firestore";
+import auth from "@react-native-firebase/auth";
+
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import HomeScreen from "./src/screens/Home";
+
+const Stack = createNativeStackNavigator();
+
+async function getData() {
+  //const users = await firestore().collection("Users").get();
+  const data = await firestore().collection("Users").get();
+  auth()
+    .signInWithEmailAndPassword("isadora@gmail.com", "123456")
+    .then((result) => console.log(result))
+    .catch((e) => console.log(e));
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+export default function App() {
+  getData();
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{
+            headerShown: false,
+          }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
